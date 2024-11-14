@@ -1,9 +1,39 @@
-# GoMovieHub-API
+# 🎥 CineMaster API
 
-A RESTful API for managing a movie database built with Go and Gorilla Mux. This project features full CRUD functionality, allowing users to create, read, update, and delete movie records. Each movie entry includes a title, ISBN, and director details. The API includes:
-🗂️ GET /movies: Fetch all movie records.
-🎬 GET /movies/{id}: Retrieve a single movie by ID.
-➕ POST /movies: Add a new movie to the database.
-✏️ PUT /movies/{id}: Update an existing movie entry.
-❌ DELETE /movies/{id}: Remove a movie from the database.
-Built using Go for backend logic and the Gorilla Mux package for efficient request routing.
+A RESTful API for managing a movie database built with Go and Gorilla Mux. This project features full CRUD (Create, Read, Update, Delete) functionality, allowing users to efficiently handle movie records, including details like the title, ISBN, and director information.
+
+## 🚀 Features
+
+- **Fetch All Movies**: Retrieve the complete list of movies.
+- **Get a Movie by ID**: Access specific movie details using the movie's ID.
+- **Add a New Movie**: Create new movie entries with dynamic IDs.
+- **Update an Existing Movie**: Modify details of a movie by its ID.
+- **Delete a Movie**: Remove movie records from the database.
+
+## 🛠️ Built With
+
+- [Go](https://golang.org/): Backend programming language
+- [Gorilla Mux](https://github.com/gorilla/mux): HTTP request router and dispatcher
+
+## 📚 API Endpoints
+
+| Method | Endpoint           | Description             |
+| ------ | ------------------ | ----------------------- |
+| GET    | `/movies`          | Get all movies          |
+| GET    | `/movies/{id}`     | Get a single movie by ID|
+| POST   | `/movies`          | Add a new movie         |
+| PUT    | `/movies/{id}`     | Update an existing movie|
+| DELETE | `/movies/{id}`     | Delete a movie by ID    |
+
+## 🧩 Example Movie Data
+
+```json
+{
+    "id": "001",
+    "isbn": "438227",
+    "title": "Pulp fiction",
+    "director": {
+        "firstN": "Quentin",
+        "lastN": "Tarantino"
+    }
+}
