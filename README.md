@@ -44,11 +44,9 @@ A RESTful API for managing a movie database built with Go and Gorilla Mux. This 
 `git clone https://github.com/yourusername/cinemaster-api.git`
 
   2. Navigate to the project directory
-     
-`cd cinemaster-api`
+    `cd cinemaster-api`
   3. Run the server
-     
-`go run main.go`
+     `go run main.go`
   4. Access the API Open your browser or API client (like Postman) and go to:
-`http://localhost:8000/movies`
+    `http://localhost:8000/movies`
 
