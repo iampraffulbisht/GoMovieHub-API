@@ -37,3 +37,9 @@ A RESTful API for managing a movie database built with Go and Gorilla Mux. This 
         "lastN": "Tarantino"
     }
 }
+```
+## 🏃‍♂️ Getting Started
+  1. Clone repository
+     
+`git clone https://github.com/yourusername/cinemaster-api.git`
+
